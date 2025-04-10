@@ -1,0 +1,33 @@
+version: '3'
+services:
+  node-app:
+    build: .
+    image: my-node-app
+    ports:
+      - "3000:3000"
+    container_name: node-app
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/myapp
+    depends_on:
+      - mongo
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - node-app
+    container_name: nginx
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    container_name: mongo
+
+volumes:
+  mongo-data:
