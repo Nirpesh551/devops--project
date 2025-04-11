@@ -24,6 +24,3 @@ This project demonstrates a Node.js application with MongoDB, Dockerized and orc
    ```bash
    git clone https://github.com/Nirpesh551/devops-trainee-project.git
    cd devops-trainee-project
-
-## Troubleshooting
-   **Grafana Dashboards Disappear After Restart:** Ensure the `grafana-data` volume is defined in `docker-compose.yml` to persist dashboards and data sources.
