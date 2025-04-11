@@ -24,3 +24,5 @@ This project demonstrates a Node.js application with MongoDB, Dockerized and orc
    ```bash
    git clone https://github.com/Nirpesh551/devops-trainee-project.git
    cd devops-trainee-project
+
+A short demo video is available here: [Demo Video](https://drive.google.com/file/d/1et2b7fwipdtrmI0Q7QXuIIrubfXVPoh7/view?usp=sharing)
