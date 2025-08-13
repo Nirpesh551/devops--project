@@ -1,4 +1,4 @@
-# DevOps Traineeship Project - Nirpesh
+# DevOps Project - Nirpesh
 
 This project demonstrates a Node.js application with MongoDB, Dockerized and orchestrated using Docker Compose. It includes an Nginx reverse proxy, a MongoDB backup script, CI/CD with Bitbucket Pipelines, and monitoring with Prometheus and Grafana.
 
